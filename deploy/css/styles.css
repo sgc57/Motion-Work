@@ -334,6 +334,10 @@ body {
   font-family: "Righteous", cursive;
 }
 
+h1 {
+  margin: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -369,4 +373,17 @@ textarea {
   height: 80vh;
   background-size: cover;
   background-position: center bottom;
+}
+#hero #overlay {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero #overlay h1 {
+  font-size: 5.625rem;
+}
+#hero #overlay button {
+  border: none;
 }

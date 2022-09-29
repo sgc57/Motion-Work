@@ -5,6 +5,18 @@
     background-position: center bottom;
 
     #overlay{
-        
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1{
+            font-size: rem-calc(90);
+        }
+
+        button{
+            border: none;
+        }
     }
 }
