@@ -9,19 +9,6 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
-    "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg" : {
-      "ft" : 16384,
-      "iS" : 833978,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -34,9 +21,9 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/hero.jpg" : {
+    "\/deploy\/img\/hero.jpeg" : {
       "ft" : 16384,
-      "iS" : 98601,
+      "iS" : 483125,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero.jpg",
@@ -304,6 +291,12 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
