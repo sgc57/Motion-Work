@@ -12,7 +12,10 @@ html {
 ============= */
 :root {
   --white: #fff;
+  --whiteO: 255,255,255;
   --black: #000;
+  --blue: #3A6BAC;
+  --lavender: #ABB0E4;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,7 +334,7 @@ template {
     Typography
 ============= */
 body {
-  font-family: "Righteous", cursive;
+  font-family: "Kanit", sans-serif;
 }
 
 h1 {
@@ -370,9 +373,19 @@ textarea {
 ============= */
 #hero {
   background-image: url("../img/hero.jpeg");
-  height: 80vh;
+  height: 60vh;
   background-size: cover;
   background-position: center bottom;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 70vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 80vh;
+  }
 }
 #hero #overlay {
   height: 100%;
@@ -383,7 +396,37 @@ textarea {
 }
 #hero #overlay h1 {
   font-size: 5.625rem;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #hero #overlay h1 {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #overlay h1 {
+    font-size: 5.625rem;
+  }
+}
+#hero #overlay h1 span {
+  color: var(--lavender);
 }
 #hero #overlay button {
   border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.25rem;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #hero #overlay button {
+    font-size: 1.5625rem;
+    padding: 30px 50px;
+  }
+}
+#hero #overlay button i {
+  margin-left: 8px;
 }

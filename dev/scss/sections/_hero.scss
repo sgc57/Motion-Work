@@ -1,8 +1,16 @@
 #hero{
     background-image: url("../img/hero.jpeg");
-    height: 80vh;
+    height: 60vh;
     background-size: cover;
     background-position: center bottom;
+
+    @include md{
+        height: 70vh;
+    }
+
+    @include lg{
+        height: 80vh;
+    }
 
     #overlay{
         height: 100%;
@@ -13,10 +21,39 @@
 
         h1{
             font-size: rem-calc(90);
+            color: var(--white);
+
+            @include md{
+                font-size: rem-calc(50);
+            }
+        
+            @include lg{
+                font-size: rem-calc(90);
+            }
+
+            span{
+                color: var(--lavender);
+            }
         }
 
         button{
             border: none;
+            background-color: var(--blue);
+            color: var(--white);
+            font-size: rem-calc(20);
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin-top: 24px;
+            cursor: pointer;
+
+            @include md{
+                font-size: rem-calc(25);
+                padding: 30px 50px;
+            }
+
+            i{
+                margin-left: 8px;
+            }
         }
     }
 }
