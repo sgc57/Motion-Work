@@ -16,6 +16,7 @@ html {
   --black: #000;
   --blue: #3A6BAC;
   --lavender: #ABB0E4;
+  --orang: #A07070;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -409,7 +410,7 @@ textarea {
   }
 }
 #hero #overlay h1 span {
-  color: var(--lavender);
+  color: var(--black);
 }
 #hero #overlay button {
   border: none;
