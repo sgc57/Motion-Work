@@ -1,9 +1,18 @@
 import { gsap } from "gsap";
 
-gsap.from("#first-line",{duration: 1, x: -100, alpha: 0});
-gsap.from("#second-line",{duration: 1, x: -75, alpha:0, delay: 0.5});
-gsap.from("#rocket-btn",{duration: 1, x: -50, alpha:0, delay: 0.75});
-gsap.from("#rocket-btn i",{duration: 1, y: 35, alpha:0, delay: 0.75});
+function heroAnimation(){
+    var tl = gsap.timeline();
+    tl.from("#first-line",{duration: 1, x: -100, alpha: 0})
+    .from("#second-line",{duration: 1, x: -75, alpha:0})
+    .from("#rocket-btn",{duration: 1, x: -50, alpha:0})
+    .from("#rocket-btn i",{duration: 1, y: 35, alpha:0});
+    return tl;
+}
+
+var mainTL = gsap.timeline();
+mainTL.add(heroAnimation());
+
+
 
 let rocketBtn = document.querySelector("#rocket-btn");
 
