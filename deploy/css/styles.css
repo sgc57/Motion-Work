@@ -396,7 +396,7 @@ textarea {
   text-align: center;
 }
 #hero #overlay h1 {
-  font-size: 5.625rem;
+  font-size: 2.8125rem;
   color: var(--white);
 }
 @media (min-width: 768px) {

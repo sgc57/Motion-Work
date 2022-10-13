@@ -12,24 +12,34 @@ function heroAnimation(){
 var mainTL = gsap.timeline();
 mainTL.add(heroAnimation());
 
+var heroSizeNumber = 1;
+
+let mm = gsap.matchMedia();
+
+mm.add("(min-width: 768px)", () => {
+  // desktop setup code here...
+  heroSizeNumber = 2;
+});
+
+mm.add("(max-width: 767px)", () => {
+  // mobile setup code here...
+  heroSizeNumber = 1.25;
+});
 
 
 let rocketBtn = document.querySelector("#rocket-btn");
 
+var buttonAnimation = gsap.timeline({paused:true});
+buttonAnimation.to("#rocket-btn",{duration:1, scale:heroSizeNumber},"hidden")
+.to("#rocket-btn i",{duration: 1, y: -50, alpha: 0})
+.to("#first-line",{duration: 1, alpha:0, x:100},"hidden")
+.to("#second-line",{duration: 1, alpha:0, x:100},"hidden");
+
+
 rocketBtn.addEventListener("mouseover",function(){
-    gsap.to("#rocket-btn",{duration:1, scale:2});
-
-    gsap.to("#rocket-btn i",{duration: 1, y: -50, alpha: 0});
-
-    gsap.to("#first-line",{duration: 1, alpha:0, x:100});
-    gsap.to("#second-line",{duration: 1, alpha:0, x:100});
+    buttonAnimation.play();
 })
 
 rocketBtn.addEventListener("mouseout",function(){
-    gsap.to("#rocket-btn",{duration:1, scale:1});
-
-    gsap.to("#rocket-btn i",{duration: 1, y: 0, alpha: 1});
-
-    gsap.to("#first-line",{duration: 1, alpha:1, x:0});
-    gsap.to("#second-line",{duration: 1, alpha:1, x:0});
+    buttonAnimation.reverse();
 })
