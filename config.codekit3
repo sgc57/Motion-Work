@@ -34,6 +34,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/ring-nebula.jpg" : {
+      "ft" : 16384,
+      "iS" : 820554,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ring-nebula.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/ring-nebula.png" : {
       "ft" : 32768,
       "iS" : 1362884,

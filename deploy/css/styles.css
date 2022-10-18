@@ -475,6 +475,12 @@ textarea {
 }
 #content1 > div {
   grid-area: text;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "img paragraph";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 @media (min-width: 768px) {
   #content1 > div {
@@ -482,28 +488,30 @@ textarea {
     grid-template-columns: 50% auto;
   }
 }
-#content1 > div aside {
+#content1 > div #img {
+  padding: 16px;
+  grid-area: img;
+}
+#content1 > div #img aside {
   height: 100vh;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  #content1 > div aside {
+  #content1 > div #img aside {
     height: 70vh;
   }
 }
-#content1 > div aside div {
-  background-image: url("../img/ring-nebula.png");
+#content1 > div #img aside > div {
+  background-image: url("../img/ring-nebula.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
 }
-#content1 > div section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#content1 > div #paragraph {
   padding: 16px;
+  grid-area: paragraph;
 }
-#content1 > div section h1 {
+#content1 > div #paragraph h1 {
   font-weight: 300;
   font-size: 3.125rem;
 }
