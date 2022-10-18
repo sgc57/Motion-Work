@@ -1,0 +1,12 @@
+#rocket-box{
+    height: 30vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--navy);
+
+    #rocket{
+        font-size: rem-calc(60);
+        color: var(--white);
+    }
+}
