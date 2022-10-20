@@ -34,6 +34,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/pillars-of-creation.jpg" : {
+      "ft" : 16384,
+      "iS" : 637396,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pillars-of-creation.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pillars-of-creation.png" : {
+      "ft" : 32768,
+      "iS" : 4962981,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pillars-of-creation.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/ring-nebula.jpg" : {
       "ft" : 16384,
       "iS" : 820554,
@@ -101,6 +127,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/text.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/text2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/text2.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -344,6 +378,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_text.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_text2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_text2.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
