@@ -47,11 +47,27 @@ rocketBtn.addEventListener("mouseout",function(){
 })
 
 function shuttleAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger: "#rocket", scrub: true, start:"top 70%", end:"bottom 10%",markers: true}});
+    var tl = gsap.timeline({scrollTrigger:{trigger: "#rocket", scrub: true, start:"top 70%", end:"bottom 10%",markers: false}});
     tl.from("#rocket",{duration:1, x:-1500});
+    return tl;
+}
+
+function paragraphAnimation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#content1",scrub:true, markers: false, end:"top 20%", start:"top 70%"}});
+    tl.from("#paragraph",{alpha:0, x:300,duration:1},"textAni")
+    .from("#img",{alpha:0, y:300,duration:1},"textAni");
+    return tl;
+}
+
+function paragraphAnimation2(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#content2",scrub:true, markers: false, end:"top 20%", start:"top 80%"}});
+    tl.from("#paragraph2",{alpha:0, x:-300,duration:1},"textAni2")
+    .from("#img2",{alpha:0, y:300,duration:1},"textAni2");
     return tl;
 }
 
 var mainTL = gsap.timeline();
 mainTL.add(heroAnimation())
-    .add(shuttleAnimation());
+    .add(shuttleAnimation())
+    .add(paragraphAnimation())
+    .add(paragraphAnimation2());
