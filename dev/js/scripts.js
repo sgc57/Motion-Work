@@ -1,4 +1,7 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function heroAnimation(){
     var tl = gsap.timeline();
@@ -9,8 +12,7 @@ function heroAnimation(){
     return tl;
 }
 
-var mainTL = gsap.timeline();
-mainTL.add(heroAnimation());
+
 
 var heroSizeNumber = 1;
 
@@ -43,3 +45,13 @@ rocketBtn.addEventListener("mouseover",function(){
 rocketBtn.addEventListener("mouseout",function(){
     buttonAnimation.reverse();
 })
+
+function shuttleAnimation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger: "#rocket", scrub: true, start:"top 70%", end:"bottom 10%",markers: true}});
+    tl.from("#rocket",{duration:1, x:-1500});
+    return tl;
+}
+
+var mainTL = gsap.timeline();
+mainTL.add(heroAnimation())
+    .add(shuttleAnimation());

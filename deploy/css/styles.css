@@ -441,7 +441,7 @@ textarea {
 #rocket-box {
   height: 30vh;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   align-items: center;
   background-color: var(--navy);
 }
