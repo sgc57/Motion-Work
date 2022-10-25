@@ -30,12 +30,24 @@ mm.add("(max-width: 767px)", () => {
 
 
 let rocketBtn = document.querySelector("#rocket-btn");
+let imagesBtn = document.querySelector("#images");
+let astronomersBtn = document.querySelector("#astronomers");
+let contactBtn = document.querySelector("#contact");
 
 var buttonAnimation = gsap.timeline({paused:true});
 buttonAnimation.to("#rocket-btn",{duration:1, scale:heroSizeNumber},"hidden")
 .to("#rocket-btn i",{duration: 1, y: -50, alpha: 0})
 .to("#first-line",{duration: 1, alpha:0, x:100},"hidden")
 .to("#second-line",{duration: 1, alpha:0, x:100},"hidden");
+
+var imagesAnimation = gsap.timeline({paused:true});
+imagesAnimation.to("#images",{duration:.5, scale:heroSizeNumber});
+
+var astronomersAnimation = gsap.timeline({paused:true});
+astronomersAnimation.to("#astronomers",{duration:.5, scale:heroSizeNumber});
+
+var contactAnimation = gsap.timeline({paused:true});
+contactAnimation.to("#contact",{duration:.5, scale:heroSizeNumber});
 
 
 rocketBtn.addEventListener("mouseover",function(){
@@ -44,6 +56,30 @@ rocketBtn.addEventListener("mouseover",function(){
 
 rocketBtn.addEventListener("mouseout",function(){
     buttonAnimation.reverse();
+})
+
+imagesBtn.addEventListener("mouseover",function(){
+    imagesAnimation.play();
+})
+
+imagesBtn.addEventListener("mouseout",function(){
+    imagesAnimation.reverse();
+})
+
+astronomersBtn.addEventListener("mouseover",function(){
+    astronomersAnimation.play();
+})
+
+astronomersBtn.addEventListener("mouseout",function(){
+    astronomersAnimation.reverse();
+})
+
+contactBtn.addEventListener("mouseover",function(){
+    contactAnimation.play();
+})
+
+contactBtn.addEventListener("mouseout",function(){
+    contactAnimation.reverse();
 })
 
 function shuttleAnimation(){
@@ -77,7 +113,7 @@ function hero2Animation(){
 }
 
 function footerAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#footer",scrub:true, markers: true, end:"top 80%", start:"top 90%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#footer",scrub:true, markers: true, end:"top 80%", start:"top 98%"}});
     tl.from("#footer",{alpha:0,duration:1})
     .from("#images",{alpha:0, y:-100,duration:1})
     .from("#astronomers",{alpha:0, y:-100,duration:1})
