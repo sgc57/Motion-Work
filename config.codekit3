@@ -21,6 +21,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/deep-space.jpg" : {
+      "ft" : 16384,
+      "iS" : 244465,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/deep-space.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero.jpeg" : {
       "ft" : 16384,
       "iS" : 483125,
@@ -47,19 +60,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/pillars-of-creation.png" : {
-      "ft" : 32768,
-      "iS" : 4962981,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/pillars-of-creation.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/ring-nebula.jpg" : {
       "ft" : 16384,
       "iS" : 820554,
@@ -69,19 +69,6 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/ring-nebula.png" : {
-      "ft" : 32768,
-      "iS" : 1362884,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/ring-nebula.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
