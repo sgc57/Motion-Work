@@ -113,7 +113,7 @@ function hero2Animation(){
 }
 
 function footerAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#footer",scrub:true, markers: true, end:"top 80%", start:"top 98%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#footer",scrub:true, markers: false, end:"top 80%", start:"top 98%"}});
     tl.from("#footer",{alpha:0,duration:1})
     .from("#images",{alpha:0, y:-100,duration:1})
     .from("#astronomers",{alpha:0, y:-100,duration:1})
