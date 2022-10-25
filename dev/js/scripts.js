@@ -67,7 +67,7 @@ function paragraphAnimation2(){
 }
 
 function hero2Animation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#text-break",scrub:true, markers: true, end:"top 20%", start:"top 90%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#text-break",scrub:true, markers: false, end:"top 20%", start:"top 90%"}});
     tl.from("#line1",{alpha:0, x:-300,duration:1})
     .from("#line2",{alpha:0, x:300,duration:1})
     .from("#line3",{alpha:0, duration:1})
@@ -76,9 +76,19 @@ function hero2Animation(){
     return tl;
 }
 
+function footerAnimation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#footer",scrub:true, markers: true, end:"top 80%", start:"top 90%"}});
+    tl.from("#footer",{alpha:0,duration:1})
+    .from("#images",{alpha:0, y:-100,duration:1})
+    .from("#astronomers",{alpha:0, y:-100,duration:1})
+    .from("#contact",{alpha:0, y:-100,duration:1});
+    return tl;
+}
+
 var mainTL = gsap.timeline();
 mainTL.add(heroAnimation())
     .add(shuttleAnimation())
     .add(paragraphAnimation())
     .add(paragraphAnimation2())
-    .add(hero2Animation());
+    .add(hero2Animation())
+    .add(footerAnimation());
