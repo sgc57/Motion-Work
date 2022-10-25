@@ -1,0 +1,14 @@
+#text-break{
+    color: var(--white);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 30vh;
+    >div{
+        h1{
+            font-size: rem-calc(75);
+            padding: 5% 0;
+        }
+    }
+}

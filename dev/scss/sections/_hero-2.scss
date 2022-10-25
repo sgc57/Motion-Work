@@ -4,10 +4,6 @@
     grid-template-areas: ". hero-2 .";
     
 
-    @include xl{
-        grid-template-columns: auto 1200px auto;
-        height: 100vh;
-    }
 
     div{
         grid-area: hero-2;

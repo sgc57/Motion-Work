@@ -116,6 +116,14 @@
       "oAP" : "\/dev\/content\/rocket.html",
       "oF" : 0
     },
+    "\/dev\/content\/text-break.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/text-break.html",
+      "oF" : 0
+    },
     "\/dev\/content\/text.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -373,6 +381,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_rocket.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_text-break.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_text-break.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

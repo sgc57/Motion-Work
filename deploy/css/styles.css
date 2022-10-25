@@ -590,12 +590,6 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-2 .";
 }
-@media (min-width: 1200px) {
-  #hero-2 {
-    grid-template-columns: auto 1200px auto;
-    height: 100vh;
-  }
-}
 #hero-2 div {
   grid-area: hero-2;
   background-image: url("../img/deep-space.jpg");
@@ -606,4 +600,17 @@ textarea {
   position: fixed;
   top: 0;
   z-index: -1;
+}
+
+#text-break {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30vh;
+}
+#text-break > div h1 {
+  font-size: 4.6875rem;
+  padding: 5% 0;
 }
