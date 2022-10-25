@@ -1,3 +1,51 @@
 /* =============
     Footer
 ============= */
+#footer{
+    background-color: var(--blue);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero3 .";
+    padding: 45px 0 40px;
+
+    @include md{
+        grid-template-columns: auto 90vw auto;
+        margin: 48px 0 0 0;
+    }
+
+    @include lg{
+        grid-template-columns: auto 80vw auto;
+        margin: 64px 0 0 0;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div{
+        grid-area: hero3;
+        grid-template-columns: 33% 33% auto;
+        grid-template-areas: "images astronomers contact";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+
+        #images{
+            grid-area: images;
+            padding: 16px 10%;
+        }
+
+        #astronomers{
+            grid-area: astronomers;
+            padding: 16px 10%;
+        }
+
+        #contact{
+            grid-area: contact;
+            padding: 16px 10%;
+        }
+
+    }
+}
