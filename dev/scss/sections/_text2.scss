@@ -3,6 +3,7 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". text .";
     margin: 24px 0;
+    background-color: var(--white);
 
     @include md{
         grid-template-columns: auto 90vw auto;
