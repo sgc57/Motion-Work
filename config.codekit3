@@ -127,13 +127,13 @@
       "oF" : 0
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
