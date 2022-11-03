@@ -1,9 +1,12 @@
 <svg width="626" height="615" viewBox="0 0 626 615" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="626" height="615" fill="black"/>
+<g id="circle">
 <rect width="626" height="615" fill="white"/>
-<line x1="311.5" y1="566" x2="311.5" y2="49" stroke="black" stroke-width="3"/>
-<path d="M313 570C457.699 570 575 452.699 575 308C575 163.301 457.699 46 313 46" stroke="black" stroke-width="3"/>
-<path d="M313 570C168.301 570 51 452.699 51 308C51 163.301 168.301 46 313 46" stroke="black" stroke-width="3"/>
-<circle cx="312.5" cy="49.5" r="31" fill="black" stroke="black" stroke-width="3"/>
-<circle cx="312.5" cy="564.5" r="31" fill="white" stroke="black" stroke-width="3"/>
-<circle cx="313" cy="306" r="170" fill="#7E5592"/>
+<line id="Line 1" x1="311.5" y1="566" x2="311.5" y2="49" stroke="black" stroke-width="3"/>
+<path id="right half" d="M313 570C457.699 570 575 452.699 575 308C575 163.301 457.699 46 313 46" stroke="black" stroke-width="3"/>
+<path id="left half" d="M313 570C168.301 570 51 452.699 51 308C51 163.301 168.301 46 313 46" stroke="black" stroke-width="3"/>
+<circle id="black circle" cx="312.5" cy="49.5" r="31" fill="black" stroke="black" stroke-width="3"/>
+<circle id="white circle" cx="312.5" cy="564.5" r="31" fill="white" stroke="black" stroke-width="3"/>
+<circle id="purple circle" cx="313" cy="306" r="170" fill="#7E5592"/>
+</g>
 </svg>
