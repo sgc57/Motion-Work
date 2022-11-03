@@ -55,6 +55,7 @@ function UIMotion(){
 var mainTL = gsap.timeline();
 mainTL.add(simpleMotion())
     .add(patternMotion())
+    .add(UIMotion())
     .add(UIMotion());
 
 GSDevTools.create();
