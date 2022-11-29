@@ -6,8 +6,9 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function textDraw(){
     var tl = gsap.timeline()
-    tl.to(".text",{duration:0.5, alpha:10})
-
+    tl.fromTo("#z-mask, #i-mask, #d-mask, #y-mask",{drawSVG:"0% 100%"}, {drawSVG:"100% 100%", duration:0.75, stagger:0.25},"textmove")
+    tl.fromTo("#i-dot", {y:60, alpha:0}, {alpha:100, y:-30, duration:0.25})
+    tl.to("#i-dot", {y:0, duration:0.25})
     return tl;
 }
 
